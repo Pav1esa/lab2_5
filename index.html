@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Павлеса Олег ПП-21</title>
+	</head>	
+	<body>
+		<script> 
+			"use strict";
+
+			// Змінна для зберігання інформації про властивості
+			let propertyInfo = "";
+
+			// Використання оператора циклу for...in для перебирання властивостей об'єкта document
+			for (let propertyName in document) {
+				// Збираємо інформацію про назву властивості і її значення
+				propertyInfo = propertyName + " - " + document[propertyName];
+				// Виводимо інформацію про кожну властивість на сторінку
+				document.write(propertyInfo + "<br>");
+			}
+		</script>
+	</body>
+</html>
